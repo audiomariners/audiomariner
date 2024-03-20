@@ -90,8 +90,9 @@ Our project aims to apply machine learning to create not only a transcript, but 
 
 
 
-<!-- ### Built With
+### Built With
 
+<!-- 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Next][Next.js]][Next-url]
@@ -144,8 +145,9 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-<!-- ## Usage
+ ## Usage
 
+<!--
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
@@ -157,13 +159,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] R&D: Evaluation and integration of transcription / speech-to-text solutions, with focus on local models, regarding quality of transcripts as well as cost and scalability
+- [ ] R&D: Evaluation and integration of AI methods for content segmentation of episodes (by speaker, outline, question-answer segments...) 
 
 See the [open issues](https://github.com/clstaudt/audiomariner/issues) for a full list of proposed features (and known issues).
 
