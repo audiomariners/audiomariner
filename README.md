@@ -147,6 +147,25 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
  ## Usage
 
+### Querying a spoken word audio file
+
+```python
+audio = Audio("../data/audio/ozymandias.mp3")
+audio.process()
+result_segments = audio.search(query="mighty", top=3)
+
+top_segment = result_segments[0]
+
+print(top_segment.transcript)
+```
+
+```
+  And on the pedestal these words appear:
+  "My name is Ozymandias, King of Kings:
+  Look on my works, ye Mighty, and despair!"
+```
+
+
 <!--
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
