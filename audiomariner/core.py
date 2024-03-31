@@ -119,5 +119,42 @@ class Settings:
         return self.config.get(option_name)
 
 
+class Text:
+    """Abstract base class for text objects"""
+    pass
+
+class Transcript(Text):
+    """Representing the transcription of an audio data item."""
+
+class Model:
+    """ Abstract base class for ML models."""
+
+class TranscriptionModel(Model):
+    """Base class representing models capable of transcribing audio to """
+
+    def __init__(
+        self,
+        name: str,
+    ):
+        self.name = name
+
+    def transcribe(self, audio: Audio) -> Transcript:
+        raise NotImplementedError()
+
+
+class SpeakerDiary:
+    pass
+
+
+class SpeakerDiarizationModel(Model):
+    """ Base class for a model capable of speaker diarization"""
+
+    def diarize(self, audio: Audio) -> SpeakerDiary:
+        raise NotImplementedError()
+    
+
+class WhisperX(TranscriptionModel, SpeakerDiarizationModel):
+    pass
+
 if __name__ == "__main__":
     pass
