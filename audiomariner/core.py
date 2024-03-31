@@ -84,6 +84,40 @@ class AudioSegment:
                 f"score: {self.relevance_score:.2f})")
 
 
+class AudioMeta:
+    """Metadata base class for an audio episode"""
+    pass
+
+
+class Settings:
+    # Define a dictionary of supported transcription models
+    SUPPORTED_MODELS = {
+        'whisper': 'OpenAI Whisper',
+        'deepspeech': 'Mozilla DeepSpeech',
+    }
+
+    # Default configuration options
+    DEFAULTS = {
+        'transcription_model': 'whisper'
+    }
+
+    def __init__(self, **kwargs):
+        # Initialize configuration with default settings
+        self.config = {**self.DEFAULTS}
+
+        # Override default configuration with user-provided options
+        for key, value in kwargs.items():
+            if key in self.config:
+                self.set_option(key, value)
+
+    def set_option(self, option_name, value):
+        if option_name == 'transcription_model' and value not in self.SUPPORTED_MODELS:
+            raise ValueError(f"Unsupported transcription model: {value}. Choose from {list(self.SUPPORTED_MODELS.keys())}")
+        self.config[option_name] = value
+
+    def get_option(self, option_name):
+        return self.config.get(option_name)
+
 
 if __name__ == "__main__":
     pass
