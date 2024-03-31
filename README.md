@@ -184,8 +184,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] R&D: Evaluation and integration of transcription / speech-to-text solutions, with focus on local models, regarding quality of transcripts as well as cost and scalability
-- [ ] R&D: Evaluation and integration of AI methods for content segmentation of episodes (by speaker, outline, question-answer segments...) 
+- [ ] R&D: Evaluation and integration of transcription / speech-to-text models, with focus on local, open models => select best models, trading off transcript quality with cost and scalability
+- [ ]  R&D: Evaluation and integration of AI methods for content analysis (segmentation by speakers, Q&A segments, chapters...) => rich metadata extraction
+- [ ] R&D: Evaluation and integration of relevant search engine technology for indexing and accessing audio content => query engine over the content
+- [ ] User Research & Requirements Discovery: connect with potential application developers and gather requirements 
+- [ ] Development: Creation of an API exposing the verified functionality to application developers
+- [ ] Demo Applications: Development and deployment of a demo application with search mask and audio player => showcase the audio navigation capabilities of the library
 
 See the [open issues](https://github.com/clstaudt/audiomariner/issues) for a full list of proposed features (and known issues).
 
