@@ -82,9 +82,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Podcasts and other long-form audio formats are more popular as knowledge sources than ever, but content in them tends to remain relatively hidden compared to other documents on the web: established search engines search titles and descriptions, but not the spoken word. With the progress of AI tools, however, easily navigating audio content is coming within reach: Automatic transcription, speaker recognition, detection of conversation structure and topics - powered by machine learning. 
 
-Our project aims to apply machine learning to create not only a transcript, but also metadata that characterizes the content and form of an episode. A search index built from this metadata helps to retrieve the most relevant episodes for a search query: Imagine a true podcast search engine that knows the spoken content. It can also point to specific segments: Imagine a podcast player with a search field that lets you easily navigate an episode. Beyond traditional search, the extracted metadata also serve to make the audio content accessible to LLM-driven AI applications: Imagine a chatbot that allows you to have a dialog with a podcast episode by presenting the most relevant segments for your requests.
+Podcasts and other long-form audio formats are more popular than ever, but their content remains less accessible than to other media on the web: Established search engines work with titles and descriptions, but not the spoken word itself. You may remember an interesting segment from an episode or talk, but it's cumbersome to retrieve it again and refer others to it. 
+
+Thanks to current progress in AI, navigating speech audio content could become much easier: Automatic transcription, speaker recognition and diarization, detection of structure and topics - examples of functions enabled by state of the art machine learning models.
+
+The audiomariner project aims to provide an open source toolkit of machine learning solutions for transcribing and indexing spoken-word audio files. Going beyond transcription, it focuses on extracting rich metadata that maps the content and form of podcast episodes, interviews, talks, voice memos and similar content. This is the basis for advanced search features over audio content, which can power a variety of end user applications: Imagine an audio player with a search field for your queries. Imagine a chatbot that enables you to ask questions about a long talk. Imagine a true podcast search and recommendation engine that knows large volumes of episodes and point you to the most relevant segments, or suggest new content based on the topic that you are listening to.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -145,9 +148,9 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
- ## Usage
+ ## Usage (Vision)
 
-### Querying a spoken word audio file
+### Querying a spoken word audio file by keywords
 
 ```python
 audio = Audio("../data/audio/ozymandias.mp3")
@@ -165,6 +168,9 @@ print(top_segment.transcript)
   Look on my works, ye Mighty, and despair!"
 ```
 
+### Extracting and identifying speakers
+
+### Diarization
 
 <!--
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
