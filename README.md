@@ -36,7 +36,7 @@
   <h3 align="center">audiomariner</h3>
 
   <p align="center">
-    ML-powered navigation in spoken word content for humans and machines
+    AI-powered navigation in spoken word audio content for humans and machines
     <!-- <br />
     <a href="https://github.com/clstaudt/audiomariner"><strong>Explore the docs »</strong></a>
     <br /> -->
