@@ -1,2 +1,3 @@
+numpy==1.26.0
 pyannote.audio
 git+https://github.com/m-bain/whisperx.git

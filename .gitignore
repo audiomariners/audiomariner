@@ -35,4 +35,7 @@ htmlcov/
 # MacOS files
 .DS_Store
 
+
+# Folders
 secrets/
+data/audio/temp
